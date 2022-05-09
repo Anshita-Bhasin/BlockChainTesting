@@ -1,8 +1,5 @@
 import { Given,When,Then,And } from "cypress-cucumber-preprocessor/steps";
 
-const url = 'https://google.com'
-
-
 Given('I open dapp', () => {
     cy.visit('https://securrencydapp.vercel.app/add-citizen')
 });
