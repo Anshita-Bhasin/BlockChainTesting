@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cucumber:report": "node cucumber-html-report.js",
+    "delete:reportFolder": "rm -rf cypress/reports/",
+    "Testing": "npm run delete:reportFolder && npx cypress open ; npm run cucumber:report"
   },
   "author": "",
   "license": "ISC",
@@ -12,10 +15,18 @@
     "@types/cypress-cucumber-preprocessor": "^4.0.1",
     "cypress": "^9.6.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
-    "cypress-metamask": "^1.0.5-development"
+    "cypress-metamask": "^1.0.5-development",
+    "multiple-cucumber-html-reporter": "^1.20.0"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "commonPath": "cypress/integration/Securrency",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   },
   "dependencies": {
     "tsify": "^5.0.4"
