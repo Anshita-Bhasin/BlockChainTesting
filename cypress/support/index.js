@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 
 import './commands'
+import 'cypress-metamask'
 afterEach(() => {
     const screenshotsFolder = Cypress.config("screenshotsFolder");
     if (window.cucumberJson?.generate) {

@@ -1,4 +1,5 @@
 {
   "testFiles": "**/*.feature",
-  "reporter": "cypress-multi-reporters"
+  "reporter": "cypress-multi-reporters",
+  "chromeWebSecurity": true
 }

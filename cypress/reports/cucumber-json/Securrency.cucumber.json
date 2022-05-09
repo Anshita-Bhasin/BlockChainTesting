@@ -1,0 +1,225 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "DApp Testing",
+    "line": 1,
+    "id": "dapp-testing",
+    "tags": [],
+    "uri": "Securrency.feature",
+    "elements": [
+      {
+        "id": "dapp-testing;verifying-the-logo",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Verifying the logo",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open dapp",
+            "result": {
+              "status": "passed",
+              "duration": 242000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click on connect",
+            "result": {
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I verify the logo",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "dapp-testing;verifying-the-columns-of-citizen-list",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Verifying the columns of citizen list",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open dapp",
+            "result": {
+              "status": "passed",
+              "duration": 230000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click on connect",
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see Id",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `thead>tr>th:contains(\"id\")`, but never found it.\n    at Context.eval (https://securrencydapp.vercel.app/__cypress/tests?p=cypress/integration/Securrency.feature:50:40)\n    at Context.resolveAndRunStepDefinition (https://securrencydapp.vercel.app/__cypress/tests?p=cypress/integration/Securrency.feature:10479:29)\n    at Context.eval (https://securrencydapp.vercel.app/__cypress/tests?p=cypress/integration/Securrency.feature:9800:35)"
+            },
+            "embeddings": [
+              {
+                "mime_type": "image/png"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see name",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see age",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see city",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dapp-testing;opening-a-dapp",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Opening a dapp",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open dapp",
+            "result": {
+              "status": "passed",
+              "duration": 290000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click on connect",
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I open dapp",
+            "result": {
+              "status": "passed",
+              "duration": 208000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I click add citizen button",
+            "result": {
+              "status": "passed",
+              "duration": 86000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I enter name",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[id=\"name-input\"]`, but never found it.\n    at Context.eval (https://securrencydapp.vercel.app/__cypress/tests?p=cypress/integration/Securrency.feature:62:6)\n    at Context.resolveAndRunStepDefinition (https://securrencydapp.vercel.app/__cypress/tests?p=cypress/integration/Securrency.feature:10479:29)\n    at Context.eval (https://securrencydapp.vercel.app/__cypress/tests?p=cypress/integration/Securrency.feature:9800:35)"
+            },
+            "embeddings": [
+              {
+                "mime_type": "image/png"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I enter age",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I enter city",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "I add somenotes",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I click on AddCitizen",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

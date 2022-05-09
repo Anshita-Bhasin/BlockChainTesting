@@ -2,6 +2,7 @@ Feature: DApp Testing
 
   Background:
     Given I open dapp
+    And I click on connect
 
 
 

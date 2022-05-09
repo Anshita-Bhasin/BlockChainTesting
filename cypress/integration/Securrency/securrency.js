@@ -1,16 +1,17 @@
 import { Given,When,Then,And } from "cypress-cucumber-preprocessor/steps";
 
 Given('I open dapp', () => {
+
     cy.visit('https://securrencydapp.vercel.app/add-citizen')
 });
 
 And('I click add citizen button', () => {
-    cy.get(button['type="button"]').click();
+    cy.get('button[type="button"]').click();
 });
 
 Then('I verify the logo', ()=> {
 cy.get('img[data-nimg="intrinsic"]')
-.should('contain', 'Securrency')
+.should('be.visible')
 
 });
 
@@ -47,4 +48,8 @@ Given('I add somenotes',()=>
 And('I click on AddCitizen',()=>
 {
     cy.get('button[type="submit"]').click();
+});
+
+And('I click on connect',()=>{
+    cy.get('button[type="button"]').click();
 });

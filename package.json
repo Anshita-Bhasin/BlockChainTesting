@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "cucumber:report": "node cucumber-html-report.js",
     "delete:reportFolder": "rm -rf cypress/reports/",
-    "Testing": "npm run delete:reportFolder && npx cypress open ; npm run cucumber:report"
+    "Testing": "npm run delete:reportFolder && npx cypress open ; npm run cucumber:report",
+    "script": "npx cypress open",
+    "cy:open": "CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress open"
   },
   "author": "",
   "license": "ISC",
